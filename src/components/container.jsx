@@ -1,18 +1,14 @@
 import React, { Component } from 'react';
 import { Routes, Route } from 'react-router-dom'
+import "../CSS/style.css";
+
 import LandingPage from "./pages/landingPage";
 import AboutPage from "./pages/about";
-import Profile from './profiles/profile';
-import "../CSS/style.css";
+import LabReports from './pages/labReports';
 
 
 class Container extends Component {
     state = {}
-
-
-    // handleClick = () => {
-    //     this.redirect("/about");
-    // }
 
     redirect = (url) => {
         document.getElementById("container").classList.add("fade");
@@ -27,9 +23,9 @@ class Container extends Component {
         return (
             <div id='container' className="container">
                 <Routes>
-                    <Route path="/" element={<LandingPage redirect={this.redirect} />} />
-                    <Route path="/about" element={<AboutPage />} />
-                    <Route path="/profile" element={<Profile />} />
+                    {/* <Route path="/" element={<LandingPage redirect={this.redirect} />} /> */}
+                    <Route path="/about" element={<AboutPage redirect={this.redirect} />} />
+                    <Route path='/labReports' element={<LabReports />} />
                     <Route path="*" element={<LandingPage redirect={this.redirect} />} />
                 </Routes>
                 <div className="background"></div>

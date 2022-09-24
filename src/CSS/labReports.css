@@ -1,0 +1,24 @@
+.content {
+  position: fixed;
+  color: white;
+  min-height: 100vh;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 0%;
+  overflow-y: auto;
+}
+
+.LRTitle {
+  animation: wait 1.5s, fadeIn 1.5s;
+  animation-delay: 0s, 1.5s;
+  font-family: Jazz LET, fantasy;
+  /* font-size: 50px; */
+  font-size: 40px;
+  top: 30px;
+
+  font-weight: bolder;
+  margin-bottom: 0px;
+  margin-top: 0;
+  position: relative;
+}

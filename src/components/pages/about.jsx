@@ -19,12 +19,12 @@ class AboutPage extends Component {
                 github: 'https://github.com/aliShaiaz',
                 website: 'https://alishaiaz.me/',
                 profilePhoto: p_33829
-            }            
+            }
         }
     }
 
     handleClick = () => {
-        console.log(this.state.profiles._33829.name);
+        this.props.redirect('/labReports');
     }
 
     render() {
@@ -40,6 +40,13 @@ class AboutPage extends Component {
                                 </div>
                             );
                         })}
+                    </div>
+                    <div className='aboutFooterTitle'>
+                        Lab Reports
+                    </div>
+                    <div className="aboutFooterBody">
+                        <br />
+                        <button onClick={this.handleClick}>Lab Reports</button>
                     </div>
                 </div>
 

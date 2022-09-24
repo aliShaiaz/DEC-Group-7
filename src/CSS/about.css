@@ -21,11 +21,7 @@
 }
 
 .aboutBody {
-  /* float: left; */
-  /* display:contents; */
-  /* align-items: center; */
-  /* justify-content: center; */
-  position: absolute;
+  position: relative;
   width: 100%;
   animation: wait 3s, fadeIn 4s;
   animation-delay: 0s, 3s;
@@ -34,5 +30,26 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* background: red; */
+}
+.aboutFooterBody {
+  position: relative;
+  width: 100%;
+  animation: wait 4s, fadeIn 4s;
+  animation-delay: 0s, 4s;
+  color: darkgray;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.aboutFooterTitle {
+  animation: wait 4s, fadeIn 1.5s;
+  animation-delay: 0s, 4s;
+  font-family: Jazz LET, fantasy;
+  font-size: 30px;
+  font-weight: bolder;
+  margin-bottom: 0px;
+  margin-top: 0;
+  position: relative;
 }
