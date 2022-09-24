@@ -19,7 +19,7 @@ class AboutPage extends Component {
                 github: 'https://github.com/aliShaiaz',
                 website: 'https://alishaiaz.me/',
                 profilePhoto: p_33829
-            }
+            }            
         }
     }
 
@@ -33,9 +33,6 @@ class AboutPage extends Component {
                 <div className="content" >
                     <h1 className='aboutTitle'>Group Members</h1>
                     <div className="aboutBody">
-                        {/* {this.state.profiles.map(pro => <Profile info={pro} />)} */}
-                        {/* {this.state.profiles.map(pro => <li>{pro.name}</li>)} */}
-                        {/* <Profile info={this.state.profiles._33829} /> */}
                         {Object.keys(this.state.profiles).map((key, index) => {
                             return (
                                 <div key={index}>

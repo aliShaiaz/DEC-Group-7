@@ -29,23 +29,9 @@ class Profile extends Component {
                     </div>
                     <br />
                     <div className="info">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td style={{ textAlign: 'left' }}>Name:</td>
-                                    <td style={{ textAlign: 'left' }}>{this.props.info.name}</td>
-                                </tr>
-                                <tr>
-                                    <td style={{ textAlign: 'left' }}>ID:</td>
-                                    <td style={{ textAlign: 'left' }}>{this.props.info.id}</td>
-                                </tr>
-                                <tr>
-                                    <td style={{ textAlign: 'left' }}>Department:</td>
-                                    <td style={{ textAlign: 'left' }}>{this.props.info.dept}</td>
-                                </tr>
-
-                            </tbody>
-                        </table>
+                        {this.props.info.name} <br />
+                        {this.props.info.id} <br />
+                        {this.props.info.dept}
                         <div className='links'>
                             <a target="_blank" href={this.props.info.linkedin}>
                                 <img src={icon_linkedin} alt="FB" className="icon" />
@@ -65,9 +51,9 @@ class Profile extends Component {
                                 <img src={icon_web} alt="FB" className="icon" />
                             </a>
                         </div>
-                    </div>
-                </div>
-            </React.Fragment>
+                    </div >
+                </div >
+            </React.Fragment >
         );
     }
 }
