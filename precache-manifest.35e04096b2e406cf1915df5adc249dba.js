@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "5e64a8f6cf3bb40c5829",
-    "url": "/DEC-Group-7/static/css/main.2ff0f785.chunk.css"
+    "revision": "2419dfe52feb6f7980f3",
+    "url": "/DEC-Group-7/static/css/main.edaa0230.chunk.css"
   },
   {
-    "revision": "5e64a8f6cf3bb40c5829",
-    "url": "/DEC-Group-7/static/js/main.5e64a8f6.chunk.js"
+    "revision": "2419dfe52feb6f7980f3",
+    "url": "/DEC-Group-7/static/js/main.2419dfe5.chunk.js"
   },
   {
-    "revision": "6a7bfa4df9242b40edff",
-    "url": "/DEC-Group-7/static/js/1.6a7bfa4d.chunk.js"
+    "revision": "4bb05d8fed1e4d6e8559",
+    "url": "/DEC-Group-7/static/js/1.4bb05d8f.chunk.js"
   },
   {
-    "revision": "20cf105885a264b119e0",
-    "url": "/DEC-Group-7/static/js/2.20cf1058.chunk.js"
+    "revision": "70c83d2a5799e25e7a22",
+    "url": "/DEC-Group-7/static/js/2.70c83d2a.chunk.js"
   },
   {
-    "revision": "f5014988b11624ec8edb",
-    "url": "/DEC-Group-7/static/js/runtime~main.f5014988.js"
+    "revision": "399d4aeb39838542664f",
+    "url": "/DEC-Group-7/static/js/runtime~main.399d4aeb.js"
   },
   {
     "revision": "f9ffe7a2f9b99179d795c5713ea35956",
@@ -40,7 +40,7 @@ self.__precacheManifest = [
     "url": "/DEC-Group-7/static/media/33829.c1471e97.jpg"
   },
   {
-    "revision": "291453ec89afeb36a7cc9b52680fc793",
+    "revision": "49ad8f5852223fd2e8e7a9ed49d6775b",
     "url": "/DEC-Group-7/index.html"
   }
 ];
