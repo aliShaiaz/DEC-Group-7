@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../CSS/about.css';
 import Profile from '../profiles/profile';
 import p_33829 from '../profiles/profilePhotos/33829.jpg';
+// import p_44031 from '../profiles/profilePhotos/33829.jpg';
 
 
 
@@ -19,6 +20,16 @@ class AboutPage extends Component {
                 github: 'https://github.com/aliShaiaz',
                 website: 'https://alishaiaz.me/',
                 profilePhoto: p_33829
+            }, _44031: {
+                name: 'Alvee, Junayed Alam',
+                id: '20-44031-2',
+                dept: 'EEE',
+                linkedin: 'N',
+                facebook: 'https://www.facebook.com/JunayedAlamAlvee/',
+                researchGate: 'https://www.researchgate.net/profile/Shaiaz-Ali',
+                github: 'https://github.com/aliShaiaz',
+                website: 'https://alishaiaz.me/',
+                profilePhoto: ''
             }
         }
     }

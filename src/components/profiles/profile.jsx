@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 // import '../CSS/block.css'
 import '../../CSS/profile.css'
 import icon_fb from '../../assets/icons/facebook.png';
@@ -20,6 +20,13 @@ class Profile extends Component {
     //     this.handleClick = this.handleClick.bind(this);
     // }
 
+    temp = () => {
+        return (
+            <div>
+                <h1>templdasfkfjasldfjasd;l;</h1>
+            </div>
+        );
+    }
     render() {
         return (
             <React.Fragment>
@@ -33,9 +40,16 @@ class Profile extends Component {
                         {this.props.info.id} <br />
                         {this.props.info.dept}
                         <div className='links'>
+                            {this.temp}
+
                             <a target="_blank" href={this.props.info.linkedin}>
                                 <img src={icon_linkedin} alt="FB" className="icon" />
                             </a>
+                            {/* <Link to={this.props.info.linkedin}>
+                                <a target="_blank" href={this.props.info.linkedin}>
+                                    <img src={icon_linkedin} alt="FB" className="icon" />
+                                </a>
+                            </Link> */}
 
                             <a target="_blank" href={this.props.info.facebook}><img src={icon_fb} alt="FB" className="icon" />
                             </a>
