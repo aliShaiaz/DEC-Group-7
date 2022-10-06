@@ -24,5 +24,10 @@
 }
 
 .LRBody {
-  margin-top: 40px;
+  /* margin-top: 10px; */
+  animation: wait 3s, fadeIn 8s;
+  animation-delay: 0s, 3s;
+  color: darkgray;
+  position: relative;
+  top: 20vh;
 }

@@ -15,7 +15,6 @@ class AboutPage extends Component {
                 id: '17-33829-1',
                 dept: 'CSE',
                 linkedin: 'https://www.linkedin.com/in/alishaiaz/',
-                facebook: 'https://www.facebook.com/alishaiaz/',
                 researchGate: 'https://www.researchgate.net/profile/Shaiaz-Ali',
                 github: 'https://github.com/aliShaiaz',
                 website: 'https://alishaiaz.me/',
@@ -24,11 +23,28 @@ class AboutPage extends Component {
                 name: 'Alvee, Junayed Alam',
                 id: '20-44031-2',
                 dept: 'EEE',
-                linkedin: 'N',
-                facebook: 'https://www.facebook.com/JunayedAlamAlvee/',
-                researchGate: 'https://www.researchgate.net/profile/Shaiaz-Ali',
-                github: 'https://github.com/aliShaiaz',
-                website: 'https://alishaiaz.me/',
+                linkedin: '',
+                researchGate: '',
+                github: '',
+                website: '',
+                profilePhoto: ''
+            }, _44112: {
+                name: 'Das, Antu',
+                id: '20-44112-2',
+                dept: 'EEE',
+                linkedin: '',
+                researchGate: '',
+                github: '',
+                website: '',
+                profilePhoto: ''
+            }, _43652: {
+                name: 'Safat, Sajjam Hossain',
+                id: '20-43652-2',
+                dept: 'EEE',
+                linkedin: '',
+                researchGate: '',
+                github: '',
+                website: '',
                 profilePhoto: ''
             }
         }
@@ -52,15 +68,13 @@ class AboutPage extends Component {
                             );
                         })}
                     </div>
-                    <div className='aboutFooterTitle'>
+                    <div className='aboutFooterTitle' onClick={this.handleClick}>
                         Lab Reports
                     </div>
-                    <div className="aboutFooterBody">
-                        <br />
-                        <button onClick={this.handleClick}>Lab Reports</button>
+                    <div className="aboutFooterBody" onClick={this.handleClick}>
+                        (Click to See Lab Reports)
                     </div>
                 </div>
-
             </React.Fragment>
         );
     }

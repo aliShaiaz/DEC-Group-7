@@ -12,14 +12,6 @@ import icon_web from '../../assets/icons/web.png';
 
 class Profile extends Component {
 
-    // constructor(props) {
-    //     super(props);
-
-    //     this.state = this.props.profile;
-    //     import p from './profilePhotos/33829.jpg';
-    //     this.handleClick = this.handleClick.bind(this);
-    // }
-
     temp = () => {
         return (
             <div>
@@ -27,6 +19,9 @@ class Profile extends Component {
             </div>
         );
     }
+
+
+
     render() {
         return (
             <React.Fragment>
@@ -51,8 +46,8 @@ class Profile extends Component {
                                 </a>
                             </Link> */}
 
-                            <a target="_blank" href={this.props.info.facebook}><img src={icon_fb} alt="FB" className="icon" />
-                            </a>
+                            {/* <a target="_blank" href={this.props.info.facebook}><img src={icon_fb} alt="FB" className="icon" />
+                            </a> */}
 
                             <a target="_blank" href={this.props.info.researchGate}><img src={icon_researchGate} alt="FB" className="icon" />
                             </a>
@@ -64,6 +59,7 @@ class Profile extends Component {
                             <a target="_blank" href={this.props.info.website}>
                                 <img src={icon_web} alt="FB" className="icon" />
                             </a>
+
                         </div>
                     </div >
                 </div >
