@@ -1,19 +1,22 @@
 import React, { Component } from 'react';
 import '../../CSS/labReports.css';
 
-class LabReports extends Component {
-    state = {}
-    render() {
-        return (
-            <React.Fragment>
-                <div className="content">
-                    <div className='LRTitle'>
-                    This page will contain all the Lab Reports...
-                    </div>
+
+const LabReports = () => {
+    return (
+        <>
+            <div className="content">
+                <div className='LRTitle'>
+                    Lab Reports
                 </div>
-            </React.Fragment>
-        );
-    }
+                <div className='LRBody'>
+                    <a href='/LabReports/Lab01.pdf'>
+                        <button>Lab Report 01</button>
+                    </a>
+                </div>
+            </div>
+        </>
+    );
 }
 
 export default LabReports;
