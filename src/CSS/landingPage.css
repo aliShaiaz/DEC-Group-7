@@ -1,5 +1,4 @@
 .content {
-  position: fixed;
   color: white;
   top: 0px;
   height: 100vh;
@@ -8,21 +7,25 @@
   text-align: center;
 }
 
+.landingPage {
+  position: relative;
+  top: 30vh;
+}
+
 .contentTitle {
   animation: wait 1.5s, fadeIn 1.5s;
   animation-delay: 0s, 1.5s;
-  font-family: Jazz LET, fantasy;
-  font-size: 100px;
+  font-family: Marker Felt;
+  font-size: 150px;
   font-weight: bolder;
-  margin-bottom: 0px;
-  position: relative;
-  top: 20vh;
+  margin-bottom: 20px;
+  color: lightgray;
+  /* opacity: 0.7; */
 }
 
 .contentBody {
   animation: wait 3s, fadeIn 8s;
   animation-delay: 0s, 3s;
   color: darkgray;
-  position: relative;
-  top: 20vh;
+  /* top: 20vh; */
 }

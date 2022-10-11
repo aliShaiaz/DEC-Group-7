@@ -3,6 +3,7 @@
   width: 100px;
   border-radius: 50%;
   margin-top: 20px;
+  min-height: 100px;
   /* background-color: red; */
   /* display: list-item; */
 }
@@ -19,6 +20,7 @@
   width: 220px;
   float: left;
   overflow: hidden;
+  /* min-height: 330px; */
   /* width: 100%; */
 }
 .info {

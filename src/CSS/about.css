@@ -12,12 +12,13 @@
 .aboutTitle {
   animation: wait 1.5s, fadeIn 1.5s;
   animation-delay: 0s, 1.5s;
-  font-family: Jazz LET, fantasy;
+  font-family: Marker Felt;
   font-size: 50px;
   font-weight: bolder;
   margin-bottom: 0px;
   margin-top: 0;
   position: relative;
+  margin-top: 20px;
 }
 
 .aboutBody {
@@ -30,6 +31,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-bottom: 20px;
 }
 .aboutFooterBody {
   position: relative;
@@ -37,7 +39,6 @@
   animation: wait 4s, fadeIn 4s;
   animation-delay: 0s, 4s;
   color: darkgray;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -46,7 +47,7 @@
 .aboutFooterTitle {
   animation: wait 4s, fadeIn 1.5s;
   animation-delay: 0s, 4s;
-  font-family: Jazz LET, fantasy;
+  font-family: Marker Felt;
   font-size: 30px;
   font-weight: bolder;
   margin-bottom: 0px;

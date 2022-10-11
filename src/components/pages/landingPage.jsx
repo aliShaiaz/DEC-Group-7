@@ -15,14 +15,16 @@ class LandingPage extends Component {
                     {/* <Link to="/about"> */}
                     <div>
                         <div className="content">
-                            <div className="contentTitle">
-                                Welcome,
-                            </div>
-                            <div className="contentBody">
-                                This is the landing page of DEC-Group 7!
-                                <br />
-                                <div style={{ opacity: .4, fontSize: 10 }}>
-                                    (Click to Continue..)</div>
+                            <div className="landingPage">
+                                <div className="contentTitle">
+                                    Welcome,
+                                </div>
+                                <div className="contentBody">
+                                    This is the landing page of DEC-Group 7!
+                                    <br />
+                                    <div style={{ opacity: .4, fontSize: 10 }}>
+                                        (Click to Continue..)</div>
+                                </div>
                             </div>
                         </div>
                     </div>
