@@ -56,9 +56,9 @@ class Profile extends Component {
                                 <img src={icon_github} alt="FB" className="icon" />
                             </a>
 
-                            <a target="_blank" href={this.props.info.website}>
+                            {/* <a target="_blank" href={this.props.info.website}>
                                 <img src={icon_web} alt="FB" className="icon" />
-                            </a>
+                            </a> */}
 
                         </div>
                     </div >

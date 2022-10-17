@@ -11,7 +11,11 @@ const LabReports = () => {
                 </div>
                 <div className='LRBody'>
                     <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/Lab01.pdf'>
-                        <button>Lab Report 01</button>
+                        <button className='btn'>Lab Report 01</button>
+                    </a>
+                    <br />
+                    <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/Lab02.pdf'>
+                        <button className='btn'>Lab Report 02</button>
                     </a>
                 </div>
             </div>
