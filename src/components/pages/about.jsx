@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../../CSS/about.css';
 import Profile from '../profiles/profile';
 import p_33829 from '../profiles/profilePhotos/33829.jpg';
+import p_43652 from '../profiles/profilePhotos/43652.jpg';
 // import p_44031 from '../profiles/profilePhotos/33829.jpg';
 
 
@@ -25,7 +26,7 @@ class AboutPage extends Component {
                 dept: 'EEE',
                 linkedin: '',
                 researchGate: '',
-                github: '',
+                github: 'https://github.com/albee83',
                 website: '',
                 profilePhoto: ''
             }, _44112: {
@@ -33,8 +34,8 @@ class AboutPage extends Component {
                 id: '20-44112-2',
                 dept: 'EEE',
                 linkedin: '',
-                researchGate: '',
-                github: '',
+                researchGate: 'https://www.researchgate.net/profile/Antu-Das-7',
+                github: 'https://github.com/AntuDas17',
                 website: '',
                 profilePhoto: ''
             }, _43652: {
@@ -42,8 +43,17 @@ class AboutPage extends Component {
                 id: '20-43652-2',
                 dept: 'EEE',
                 linkedin: '',
-                researchGate: '',
-                github: '',
+                researchGate: 'https://www.researchgate.net/profile/Sajjam-Safat',
+                github: 'https://github.com/99safat',
+                website: '',
+                profilePhoto: p_43652
+            }, _41203: {
+                name: 'Hossain,  Md. Imtiaz',
+                id: '19-41203-2',
+                dept: 'EEE',
+                linkedin: 'https://www.linkedin.com/in/imtiaz-hossain-35456b253/',
+                researchGate: 'https://www.researchgate.net/profile/Imtiaz-Hossain-8',
+                github: 'https://github.com/19-41203-2',
                 website: '',
                 profilePhoto: ''
             }

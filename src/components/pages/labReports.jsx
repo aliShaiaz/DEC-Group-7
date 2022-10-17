@@ -10,7 +10,7 @@ const LabReports = () => {
                     Lab Reports
                 </div>
                 <div className='LRBody'>
-                    <a href='/LabReports/Lab01.pdf'>
+                    <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/Lab01.pdf'>
                         <button>Lab Report 01</button>
                     </a>
                 </div>
