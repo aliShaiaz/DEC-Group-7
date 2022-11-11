@@ -1,7 +1,9 @@
 :root {
-  --primary-color: #04619f;
-  --secondary-color: #000000;
-  --font-color: #555;
+  /* --primary-color: #04619f; */
+  /* --secondary-color: #000000; */
+  --primary-color: skyblue;
+  --secondary-color: #ffffff;
+  --font-color: white;
   --background: linear-gradient(
     45deg,
     var(--primary-color),
