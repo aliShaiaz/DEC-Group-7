@@ -31,3 +31,10 @@
   position: relative;
   top: 20vh;
 }
+
+.btn{
+  background: transparent;
+  color: white;
+  border-radius: 20px;
+  border-color: gray;
+}
