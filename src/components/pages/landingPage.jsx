@@ -7,6 +7,13 @@ class LandingPage extends Component {
         this.props.redirect('about');
     }
 
+    constructor(props) {
+        super(props);
+
+        // document.getElementById("navbar").navbar.classList.add("hide");
+        // document.getElementById("navbar").className = "hide";
+    }
+
     render() {
         return (
             <React.Fragment>

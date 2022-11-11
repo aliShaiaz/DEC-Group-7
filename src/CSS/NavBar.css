@@ -1,0 +1,45 @@
+nav {
+  /* background-color: green; */
+  position: absolute;
+  color: black;
+  width: 100vw;
+  height: var(--nav-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px;
+}
+
+#navbarLogo img {
+  /* height: 80%; */
+  height: 10vh;
+  margin-top: 10%; /* 10% of height */
+  margin-left: 10%; /* 10% of height */
+  width: 100%; /* 100% of height */
+  border-radius: 50%;
+}
+
+#navbarLinks {
+  position: inherit;
+  right: 20px;
+}
+#navbarLinks span {
+  margin: 20px;
+  color: black;
+
+  text-decoration: none;
+}
+
+/* #navbarLinks {
+  position: relative;
+  width: 100%;
+  height: 20%;
+  top: 40%;
+  display: flex;
+  background: red;
+}
+#navbarLinks div {
+  position: relative;
+  right: 0px;
+  margin: 0px, 100px;
+} */

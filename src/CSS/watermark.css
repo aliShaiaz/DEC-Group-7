@@ -1,6 +1,6 @@
 #watermark {
-  position: absolute;
-  color: white;
+  position: fixed;
+  color: rgb(69, 69, 69);
   opacity: 0.3;
   bottom: 10px;
   right: 15px;
@@ -9,17 +9,17 @@
 
 #wmText {
   font-size: 12px;
-  opacity: .7;
+  opacity: 0.7;
 }
 #wmName {
-    font-size: 25px;
+  font-size: 25px;
 }
 #wmLink {
-    position: relative;
-    font-size: 10px;
-    opacity: .7;
+  position: relative;
+  font-size: 10px;
+  opacity: 0.7;
 }
 #wmLink a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: rgb(69, 69, 69);
 }

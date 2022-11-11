@@ -6,6 +6,14 @@ import "../CSS/style.css";
 import LandingPage from "./pages/landingPage";
 import AboutPage from "./pages/about";
 import LabReports from "./pages/labReports";
+import LabEquipments from "./pages/LabEquipments";
+import ResearchPaperReview from "./pages/ResearchPaperReview";
+// ... //
+
+
+// NavBar //
+import ED_Logo from '../assets/Logo/ed_logo.png';
+// ... //
 
 const Container = () => {
     const redirect = useNavigate();
@@ -19,16 +27,39 @@ const Container = () => {
         }, 1000);
     };
 
+    const redirectLabReports = () => {
+        navigate('/labReports');
+
+
+    }
+
     return (
         <>
+            <nav id="navbar">
+                <div id="navbarLogo">
+                    <img src={ED_Logo} alt="" />
+                </div>
+                <div id="navbarLinks">
+                    <span onClick={() => { navigate('/about'); }}>About</span>
+                    <span onClick={() => { navigate('/labReports'); }}>Lab Reports</span>
+                    <span onClick={() => { navigate('/labEquipments'); }}>Lab Equipments</span>
+                    <span onClick={() => { navigate('/researchPaperReview'); }}>Research Paper Review</span>
+                </div>
+            </nav>
             <div id="container" className="container">
-                <Routes>
-                    <Route path="/" element={<LandingPage redirect={navigate} />} />
-                    <Route path="/about" element={<AboutPage redirect={navigate} />} />
-                    <Route path="/labReports" element={<LabReports />} />
-                    <Route path="*" element={<LandingPage redirect={navigate} />} />
-                </Routes>
                 <div className="background"></div>
+                <div className="contentx">
+                    <Routes>
+                        <Route path="/" element={<LandingPage redirect={navigate} />} />
+                        <Route path="/about" element={<AboutPage redirect={navigate} />} />
+                        <Route path="/labReports" element={<LabReports />} />
+                        <Route path="/labEquipments" element={<LabEquipments />} />
+                        <Route path="/researchPaperReview" element={<ResearchPaperReview />} />
+
+
+                        <Route path="*" element={<LandingPage redirect={navigate} />} />
+                    </Routes>
+                </div>
                 <div id="watermark">
                     <span id="wmText">designed & developed by</span>
                     <br />
@@ -42,15 +73,3 @@ const Container = () => {
 };
 
 export default Container;
-
-// class Container extends Component {
-//     state = {}
-
-//     render() {
-//         return (
-
-//         );
-//     }
-// }
-
-// export default Container;

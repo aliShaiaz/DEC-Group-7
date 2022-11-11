@@ -1,14 +1,3 @@
-.content {
-  position: fixed;
-  color: white;
-  min-height: 100vh;
-  width: 100%;
-  margin: auto;
-  text-align: center;
-  padding: 0%;
-  overflow-y: auto;
-}
-
 .LRTitle {
   animation: wait 1.5s, fadeIn 1.5s;
   animation-delay: 0s, 1.5s;
@@ -24,7 +13,6 @@
 }
 
 .LRBody {
-  /* margin-top: 10px; */
   animation: wait 3s, fadeIn 8s;
   animation-delay: 0s, 3s;
   color: darkgray;
@@ -32,9 +20,11 @@
   top: 20vh;
 }
 
-.btn{
+.btn {
   background: transparent;
-  color: white;
+  color: rgb(58, 127, 201);
+  font-weight: bolder;
   border-radius: 20px;
   border-color: gray;
+  margin: 10px;
 }

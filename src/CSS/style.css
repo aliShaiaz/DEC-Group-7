@@ -1,4 +1,5 @@
 @import "watermark.css";
+@import "NavBar.css";
 
 :root {
   /* --primary-color: #04619f; */
@@ -11,8 +12,9 @@
     var(--primary-color),
     var(--secondary-color)
   );
-}
 
+  --nav-height: 12vh;
+}
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -31,13 +33,58 @@
     opacity: 0;
   }
 }
+
 .background {
   background: var(--background);
   position: fixed;
-  top: 0px;
-  left: 0px;
-  right: 0px;
+  width: 100%;
   min-height: 100vh;
   animation: fadeIn 6s;
   z-index: -1;
+}
+
+.hide {
+  display: none;
+}
+
+.contentx {
+  position: absolute;
+  top: var(--nav-height);
+  color: white;
+  width: 100%;
+  text-align: center;
+  /* background-color: blueviolet; */
+}
+
+/* EQP LIST! */
+
+.device {
+  /* background: blue; */
+  display: flex;
+  justify-content: left;
+  margin: 35px;
+}
+
+.deviceName {
+  font-weight: bold;
+  width: 90%;
+  margin: 10px 20px;
+  font-size: 35px;
+  height: 100%;
+
+  align-self: center;
+  color: #5e5e5e;
+}
+
+.deviceDescription {
+  /* background: red; */
+  text-align: justify;
+  display: block;
+  color: black;
+  margin: 20px;
+}
+
+.deviceImage {
+  height: 25vh;
+  border-radius: 10px;
 }

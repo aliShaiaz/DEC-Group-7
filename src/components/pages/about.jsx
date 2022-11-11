@@ -5,6 +5,7 @@ import p_33829 from '../profiles/profilePhotos/33829.jpg';
 import p_43652 from '../profiles/profilePhotos/43652.jpg';
 import p_44031 from '../profiles/profilePhotos/44031.jpg';
 import p_44112 from '../profiles/profilePhotos/44112.jpg';
+import p_41203 from '../profiles/profilePhotos/41203.jpg';
 // import p_44031 from '../profiles/profilePhotos/33829.jpg';
 
 
@@ -57,7 +58,7 @@ class AboutPage extends Component {
                 researchGate: 'https://www.researchgate.net/profile/Imtiaz-Hossain-8',
                 github: 'https://github.com/19-41203-2',
                 website: '',
-                profilePhoto: ''
+                profilePhoto: p_41203
             }
         }
     }
@@ -69,24 +70,24 @@ class AboutPage extends Component {
     render() {
         return (
             <React.Fragment>
-                <div className="content" >
-                    <h1 className='aboutTitle'>Group Members</h1>
-                    <div className="aboutBody">
-                        {Object.keys(this.state.profiles).map((key, index) => {
-                            return (
-                                <div key={index}>
-                                    <Profile info={this.state.profiles[key]} />
-                                </div>
-                            );
-                        })}
-                    </div>
-                    <div className='aboutFooterTitle' onClick={this.handleClick}>
-                        Lab Reports
-                    </div>
-                    <div className="aboutFooterBody" onClick={this.handleClick}>
-                        (Click to See Lab Reports)
-                    </div>
+                {/* <div className="content" > */}
+                <h1 className='aboutTitle'>Group Members</h1>
+                <div className="aboutBody">
+                    {Object.keys(this.state.profiles).map((key, index) => {
+                        return (
+                            <div key={index}>
+                                <Profile info={this.state.profiles[key]} />
+                            </div>
+                        );
+                    })}
                 </div>
+                <div className='aboutFooterTitle' onClick={this.handleClick}>
+                    Lab Reports
+                </div>
+                <div className="aboutFooterBody" onClick={this.handleClick}>
+                    (Click to See Lab Reports)
+                </div>
+                {/* </div> */}
             </React.Fragment>
         );
     }
