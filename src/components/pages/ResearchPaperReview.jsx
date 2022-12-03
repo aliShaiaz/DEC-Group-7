@@ -11,7 +11,7 @@ const ResearchPaperReview = () => {
                 <button className='btn'>  Research Paper</button>
             </a>
             <br />
-            <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/rrp.pdf'>
+            <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/rrp.pptx'>
                 <button className='btn'>  Review of The Research Paper</button>
             </a>
         </>
