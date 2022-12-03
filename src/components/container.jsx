@@ -8,6 +8,8 @@ import AboutPage from "./pages/about";
 import LabReports from "./pages/labReports";
 import LabEquipments from "./pages/LabEquipments";
 import ResearchPaperReview from "./pages/ResearchPaperReview";
+
+import PDFViewer from "./pages/pdfViewer";
 // ... //
 
 
@@ -55,6 +57,7 @@ const Container = () => {
                         <Route path="/labReports" element={<LabReports />} />
                         <Route path="/labEquipments" element={<LabEquipments />} />
                         <Route path="/researchPaperReview" element={<ResearchPaperReview />} />
+                        <Route path="/viewPDF" element={<PDFViewer />} />
 
 
                         <Route path="*" element={<LandingPage redirect={navigate} />} />
