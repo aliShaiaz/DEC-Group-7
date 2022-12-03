@@ -5,7 +5,7 @@ const PDFViewer = () => {
     return (
         <>
             <h1>The PDF Viewer</h1>
-
+            <MyPDF />
         </>
     );
 }
