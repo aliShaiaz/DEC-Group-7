@@ -9,23 +9,40 @@ import '@react-pdf-viewer/default-layout/lib/styles/index.css';
 // Worker
 import { Worker } from '@react-pdf-viewer/core'; // install this library
 
-export const MyPDF = () => {
+
+
+
+
+import Sample from './sample.pdf';
+import './MyPDF_Style.css';
+
+
+
+
+
+
+
+export const MyPDF = (props) => {
 
     // Create new plugin instance
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     // for onchange event
-    const [pdfFile, setPdfFile] = useState(null);
+    const [pdfFile, setPdfFile] = useState(Sample);
     const [pdfFileError, setPdfFileError] = useState('');
 
     // for submit event
-    const [viewPdf, setViewPdf] = useState(null);
+    // const [viewPdf, setViewPdf] = useState(null);
+    const [viewPdf, setViewPdf] = useState(props.pdf);
 
     // onchange event
     const fileType = ['application/pdf'];
     const handlePdfFileChange = (e) => {
-        let selectedFile = e.target.files[0];
+        // let selectedFile = e.target.files[0];
+
+        let selectedFile = 100;
         if (selectedFile) {
+            alert(200);
             if (selectedFile && fileType.includes(selectedFile.type)) {
                 let reader = new FileReader();
                 reader.readAsDataURL(selectedFile);
@@ -40,6 +57,7 @@ export const MyPDF = () => {
             }
         }
         else {
+            alert(0);
             console.log('select your file');
         }
     }
@@ -55,35 +73,37 @@ export const MyPDF = () => {
         }
     }
 
+    const handleOnClick = () => {
+        const pdf = require(props.sentFile);
+        alert(pdf);
+    }
+
     return (
         <div className='container'>
 
-            <br></br>
+            {/* <br></br> */}
 
-            <form className='form-group' onSubmit={handlePdfFileSubmit}>
-                <input type="file" className='form-control'
+            {/* <form className='form-group' onSubmit={handlePdfFileSubmit}>
+                <input
+                    id='fileInput'
+                    type="file" className='form-control'
                     required onChange={handlePdfFileChange}
+                    onLoad
+
                 />
                 {pdfFileError && <div className='error-msg'>{pdfFileError}</div>}
                 <br></br>
                 <button type="submit" className='btn btn-success btn-lg'>
                     UPLOAD
                 </button>
-            </form>
-            <br></br>
-            <h4>View PDF</h4>
+            </form> */}
+            {/* <h4>View PDF</h4> */}
             <div className='pdf-container'>
-                {/* show pdf conditionally (if we have one)  */}
-                {viewPdf && <><Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
-                    <Viewer fileUrl={viewPdf}
-                        plugins={[defaultLayoutPluginInstance]} />
-                </Worker></>}
-
-                {/* if we dont have pdf or viewPdf state is null */}
-                {!viewPdf && <>No pdf file selected</>}
+                <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
+                    <Viewer fileUrl={viewPdf} plugins={[defaultLayoutPluginInstance]} />
+                </Worker>
             </div>
-
-        </div>
+        </div >
     )
 }
 

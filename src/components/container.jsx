@@ -17,6 +17,16 @@ import PDFViewer from "./pages/pdfViewer";
 import ED_Logo from '../assets/Logo/ed_logo.png';
 // ... //
 
+// Lab Reports //
+import Lab01 from '../assets/LabReports/Lab01.pdf'
+import Lab02 from '../assets/LabReports/Lab02.pdf'
+import Lab04 from '../assets/LabReports/Lab04.pdf'
+import Lab05 from '../assets/LabReports/Lab05.pdf'
+import Lab06 from '../assets/LabReports/Lab06.pdf'
+// . . . //
+
+
+
 const Container = () => {
     const redirect = useNavigate();
     const navigate = (url) => {
@@ -54,7 +64,14 @@ const Container = () => {
                     <Routes>
                         <Route path="/" element={<LandingPage redirect={navigate} />} />
                         <Route path="/about" element={<AboutPage redirect={navigate} />} />
-                        <Route path="/labReports" element={<LabReports />} />
+                        <Route path="/labReports" element={<LabReports redirect={navigate} />} />
+
+                        <Route path="/labReports/lab01" element={<PDFViewer pdf={Lab01} />} />
+                        <Route path="/labReports/lab02" element={<PDFViewer pdf={Lab02} />} />
+                        <Route path="/labReports/lab04" element={<PDFViewer pdf={Lab04} />} />
+                        <Route path="/labReports/lab05" element={<PDFViewer pdf={Lab05} />} />
+                        <Route path="/labReports/lab06" element={<PDFViewer pdf={Lab06} />} />
+
                         <Route path="/labEquipments" element={<LabEquipments />} />
                         <Route path="/researchPaperReview" element={<ResearchPaperReview />} />
                         <Route path="/viewPDF" element={<PDFViewer />} />

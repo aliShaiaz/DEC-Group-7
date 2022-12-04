@@ -1,11 +1,10 @@
-import React, { useState } from 'react';
+import React from 'react';
 import MyPDF from './MyPDF';
 
-const PDFViewer = () => {
+const PDFViewer = (props) => {
     return (
         <>
-            <h1>The PDF Viewer</h1>
-            <MyPDF />
+            <MyPDF pdf={props.pdf} />
         </>
     );
 }
