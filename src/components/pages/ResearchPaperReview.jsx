@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
-const ResearchPaperReview = () => {
+const ResearchPaperReview = (props) => {
+
+    const handleOnClick = (path) => {
+        props.redirect('/researchPaperReview/' + path);
+    }
+
     return (
         <>
             <h1>
-                R Paper Review
+                Research Papers
             </h1>
+            <br /><br />
 
-
-            <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/rp.pdf'>
-                <button className='btn'>  Research Paper</button>
-            </a>
-            <br />
-            <a href='https://downgit.github.io/#/home?url=https://github.com/aliShaiaz/dec/blob/gh-pages/LabReports/rrp.pptx'>
-                <button className='btn'>  Review of The Research Paper</button>
-            </a>
+            <div>
+                <h2>A Vademecum on Blockchain Technologies/ When, Which and How</h2>
+                <br />
+                <button className='btn' onClick={() => handleOnClick('Paper01')}>  Research Paper</button>
+                <br />
+                <button className='btn' onClick={() => handleOnClick('Review01')}>  Review of The Research Paper</button>
+            </div>
         </>
     );
 }

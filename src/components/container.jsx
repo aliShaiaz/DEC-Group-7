@@ -9,7 +9,7 @@ import LabReports from "./pages/labReports";
 import LabEquipments from "./pages/LabEquipments";
 import ResearchPaperReview from "./pages/ResearchPaperReview";
 
-import PDFViewer from "./pages/pdfViewer";
+import PDFViewer from "./pages/pdfViewer/pdfViewer";
 // ... //
 
 
@@ -23,6 +23,11 @@ import Lab02 from '../assets/LabReports/Lab02.pdf'
 import Lab04 from '../assets/LabReports/Lab04.pdf'
 import Lab05 from '../assets/LabReports/Lab05.pdf'
 import Lab06 from '../assets/LabReports/Lab06.pdf'
+// . . . //
+
+// Research Papers //
+import Paper01 from '../assets/LiteratureReview/Review01/Paper01.pdf';
+import Review01 from '../assets/LiteratureReview/Review01/Review01.pdf';
 // . . . //
 
 
@@ -39,16 +44,10 @@ const Container = () => {
         }, 1000);
     };
 
-    const redirectLabReports = () => {
-        navigate('/labReports');
-
-
-    }
-
     return (
         <>
             <nav id="navbar">
-                <div id="navbarLogo">
+                <div id="navbarLogo" onClick={() => navigate('/')}>
                     <img src={ED_Logo} alt="" />
                 </div>
                 <div id="navbarLinks">
@@ -73,7 +72,12 @@ const Container = () => {
                         <Route path="/labReports/lab06" element={<PDFViewer pdf={Lab06} />} />
 
                         <Route path="/labEquipments" element={<LabEquipments />} />
-                        <Route path="/researchPaperReview" element={<ResearchPaperReview />} />
+
+                        <Route path="/researchPaperReview" element={<ResearchPaperReview redirect={navigate} />} />
+                        <Route path="/researchPaperReview/paper01" element={<PDFViewer pdf={Paper01} />} />
+                        <Route path="/researchPaperReview/review01" element={<PDFViewer pdf={Review01} />} />
+
+
                         <Route path="/viewPDF" element={<PDFViewer />} />
 
 

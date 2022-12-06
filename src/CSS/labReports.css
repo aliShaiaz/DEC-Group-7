@@ -1,6 +1,6 @@
 .LRTitle {
-  animation: wait 1.5s, fadeIn 1.5s;
-  animation-delay: 0s, 1.5s;
+  /* animation: wait 1.5s, fadeIn 1.5s; */
+  /* animation-delay: 0s, 1.5s; */
   font-family: Marker Felt;
   /* font-size: 50px; */
   font-size: 40px;
@@ -13,8 +13,8 @@
 }
 
 .LRBody {
-  animation: wait 3s, fadeIn 8s;
-  animation-delay: 0s, 3s;
+  /* animation: wait 3s, fadeIn 8s; */
+  /* animation-delay: 0s, 3s; */
   color: darkgray;
   position: relative;
   top: 20vh;
