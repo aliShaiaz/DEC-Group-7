@@ -17,10 +17,11 @@
   /* animation-delay: 0s, 3s; */
   color: darkgray;
   position: relative;
-  top: 20vh;
+  top: 10vh;
 }
 
 .btn {
+  padding: 10px;
   background: transparent;
   color: rgb(58, 127, 201);
   font-weight: bolder;

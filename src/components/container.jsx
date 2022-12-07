@@ -23,6 +23,9 @@ import Lab02 from '../assets/LabReports/Lab02.pdf'
 import Lab04 from '../assets/LabReports/Lab04.pdf'
 import Lab05 from '../assets/LabReports/Lab05.pdf'
 import Lab06 from '../assets/LabReports/Lab06.pdf'
+import Lab07 from '../assets/LabReports/Lab07.pdf'
+import Lab08 from '../assets/LabReports/Lab08.pdf'
+import Lab09 from '../assets/LabReports/Lab09.pdf'
 // . . . //
 
 // Research Papers //
@@ -70,6 +73,9 @@ const Container = () => {
                         <Route path="/labReports/lab04" element={<PDFViewer pdf={Lab04} />} />
                         <Route path="/labReports/lab05" element={<PDFViewer pdf={Lab05} />} />
                         <Route path="/labReports/lab06" element={<PDFViewer pdf={Lab06} />} />
+                        <Route path="/labReports/lab07" element={<PDFViewer pdf={Lab07} />} />
+                        <Route path="/labReports/lab08" element={<PDFViewer pdf={Lab08} />} />
+                        <Route path="/labReports/lab09" element={<PDFViewer pdf={Lab09} />} />
 
                         <Route path="/labEquipments" element={<LabEquipments />} />
 

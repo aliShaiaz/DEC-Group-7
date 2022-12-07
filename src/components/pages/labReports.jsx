@@ -24,6 +24,14 @@ const LabReports = (props) => {
                 <button className='btn' onClick={() => { handleOnClick('lab05') }}>  Study of Transistor Characteristic in Common Emitter Amplifier</button>
                 <br />
                 <button className='btn' onClick={() => { handleOnClick('lab06') }}>  Study of BJT Biasing Circuit</button>
+                <br />
+                <button className='btn' onClick={() => { handleOnClick('lab06') }}>  Study of BJT Biasing Circuit</button>
+                <br />
+                <button className='btn' onClick={() => { handleOnClick('lab07') }}>  Bipolar Junction Transistor (BJT): Study of Single Stage Transistor Common Emitter Amplifier</button>
+                <br />
+                <button className='btn' onClick={() => { handleOnClick('lab08') }}>  Study of JFET and MOSFET Characterization</button>
+                <br />
+                <button className='btn' onClick={() => { handleOnClick('lab09') }}>  Study of Inverter Circuit using MOSFET and BJT</button>
             </div>
         </>
     );
