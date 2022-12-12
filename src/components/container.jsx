@@ -18,25 +18,16 @@ import ED_Logo from '../assets/Logo/ed_logo.png';
 // ... //
 
 // Lab Reports //
-// import Lab01 from '../assets/LabReports/Lab01.pdf'
-// import Lab01 from '../assets/LabReports/Lab01.pdf'
 import Labs from '../assets/LabReports'
-
-import Lab02 from '../assets/LabReports/Lab02.pdf'
-import Lab04 from '../assets/LabReports/Lab04.pdf'
-import Lab05 from '../assets/LabReports/Lab05.pdf'
-import Lab06 from '../assets/LabReports/Lab06.pdf'
-import Lab07 from '../assets/LabReports/Lab07.pdf'
-import Lab08 from '../assets/LabReports/Lab08.pdf'
-import Lab09 from '../assets/LabReports/Lab09.pdf'
 // . . . //
 
-import Test from './pages/test';
 
 
 // Research Papers //
 import Paper01 from '../assets/LiteratureReview/Review01/Paper01.pdf';
 import Review01 from '../assets/LiteratureReview/Review01/Review01.pdf';
+
+import LiteratureReview from "../assets/LiteratureReview";
 // . . . //
 
 
@@ -54,6 +45,10 @@ const Container = () => {
     };
 
     const labRoutes = Labs.map((lab) => <Route key={lab.id} path={"/labReports/" + lab.id} element={<PDFViewer pdf={lab.file} />} />);
+    const literatureReviewRoutes = LiteratureReview.map((review) => <React.Fragment key={review.id}>
+        <Route path={"/researchPaperReview/Paper" + review.id} element={<PDFViewer pdf={review.paper} />} />
+        <Route path={"/researchPaperReview/Review" + review.id} element={<PDFViewer pdf={review.review} />} />
+    </React.Fragment>)
 
     return (
         <>
@@ -74,15 +69,18 @@ const Container = () => {
                     <Routes>
                         <Route path="/" element={<LandingPage redirect={navigate} />} />
                         <Route path="/about" element={<AboutPage redirect={navigate} />} />
-                        <Route path="/labReports" element={<LabReports redirect={navigate} Labs={Labs} />} />
 
+                        <Route path="/labReports" element={<LabReports redirect={navigate} Labs={Labs} />} />
                         {labRoutes}
 
                         <Route path="/labEquipments" element={<LabEquipments />} />
 
-                        <Route path="/researchPaperReview" element={<ResearchPaperReview redirect={navigate} />} />
-                        <Route path="/researchPaperReview/paper01" element={<PDFViewer pdf={Paper01} />} />
-                        <Route path="/researchPaperReview/review01" element={<PDFViewer pdf={Review01} />} />
+                        <Route path="/researchPaperReview" element={<ResearchPaperReview redirect={navigate} LiteratureReview={LiteratureReview} />} />
+                        {literatureReviewRoutes}
+
+
+                        {/* <Route path="/researchPaperReview/paper01" element={<PDFViewer pdf={Paper01} />} /> */}
+                        {/* <Route path="/researchPaperReview/review01" element={<PDFViewer pdf={Review01} />} /> */}
 
 
                         <Route path="/viewPDF" element={<PDFViewer />} />

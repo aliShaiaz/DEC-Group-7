@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 const ResearchPaperReview = (props) => {
 
     const handleOnClick = (path) => {
@@ -12,13 +12,20 @@ const ResearchPaperReview = (props) => {
             </h1>
             <br /><br />
 
-            <div>
-                <h2>A Vademecum on Blockchain Technologies/ When, Which and How</h2>
-                <br />
-                <button className='btn' onClick={() => handleOnClick('Paper01')}>  Research Paper</button>
-                <br />
-                <button className='btn' onClick={() => handleOnClick('Review01')}>  Review of The Research Paper</button>
-            </div>
+            {
+                props.LiteratureReview.map((value) =>
+                    <React.Fragment key={value.id}>
+                        <h2>{value.title}</h2>
+                        <br />
+                        <button className='btn' onClick={() => handleOnClick('Paper' + value.id)}>  Research Paper</button>
+                        <button className='btn' onClick={() => handleOnClick('Review' + value.id)}>  Review of The Research Paper</button>
+                    </React.Fragment>)
+            }
+
+
+
+
+
         </>
     );
 }
