@@ -16,7 +16,7 @@
 .aboutBody {
   position: relative;
   width: 100%;
-  animation: wait 3s, fadeIn 4s;
+  animation: wait 3s, fadeIn 2s;
   animation-delay: 0s, 3s;
   color: darkgray;
 

@@ -18,7 +18,10 @@ import ED_Logo from '../assets/Logo/ed_logo.png';
 // ... //
 
 // Lab Reports //
-import Lab01 from '../assets/LabReports/Lab01.pdf'
+// import Lab01 from '../assets/LabReports/Lab01.pdf'
+// import Lab01 from '../assets/LabReports/Lab01.pdf'
+import Labs from '../assets/LabReports'
+
 import Lab02 from '../assets/LabReports/Lab02.pdf'
 import Lab04 from '../assets/LabReports/Lab04.pdf'
 import Lab05 from '../assets/LabReports/Lab05.pdf'
@@ -27,6 +30,9 @@ import Lab07 from '../assets/LabReports/Lab07.pdf'
 import Lab08 from '../assets/LabReports/Lab08.pdf'
 import Lab09 from '../assets/LabReports/Lab09.pdf'
 // . . . //
+
+import Test from './pages/test';
+
 
 // Research Papers //
 import Paper01 from '../assets/LiteratureReview/Review01/Paper01.pdf';
@@ -47,6 +53,8 @@ const Container = () => {
         }, 1000);
     };
 
+    const labRoutes = Labs.map((lab) => <Route key={lab.id} path={"/labReports/" + lab.id} element={<PDFViewer pdf={lab.file} />} />);
+
     return (
         <>
             <nav id="navbar">
@@ -66,16 +74,9 @@ const Container = () => {
                     <Routes>
                         <Route path="/" element={<LandingPage redirect={navigate} />} />
                         <Route path="/about" element={<AboutPage redirect={navigate} />} />
-                        <Route path="/labReports" element={<LabReports redirect={navigate} />} />
+                        <Route path="/labReports" element={<LabReports redirect={navigate} Labs={Labs} />} />
 
-                        <Route path="/labReports/lab01" element={<PDFViewer pdf={Lab01} />} />
-                        <Route path="/labReports/lab02" element={<PDFViewer pdf={Lab02} />} />
-                        <Route path="/labReports/lab04" element={<PDFViewer pdf={Lab04} />} />
-                        <Route path="/labReports/lab05" element={<PDFViewer pdf={Lab05} />} />
-                        <Route path="/labReports/lab06" element={<PDFViewer pdf={Lab06} />} />
-                        <Route path="/labReports/lab07" element={<PDFViewer pdf={Lab07} />} />
-                        <Route path="/labReports/lab08" element={<PDFViewer pdf={Lab08} />} />
-                        <Route path="/labReports/lab09" element={<PDFViewer pdf={Lab09} />} />
+                        {labRoutes}
 
                         <Route path="/labEquipments" element={<LabEquipments />} />
 

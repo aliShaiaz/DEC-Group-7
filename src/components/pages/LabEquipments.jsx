@@ -35,6 +35,7 @@ const LabEquipments = () => {
                                 </span>
                             </td>
                         </tr>
+
                     </tbody>
                 </table>
 
