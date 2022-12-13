@@ -44,10 +44,10 @@ const Container = () => {
         }, 1000);
     };
 
-    const labRoutes = Labs.map((lab) => <Route key={lab.id} path={"/labReports/" + lab.id} element={<PDFViewer pdf={lab.file} />} />);
+    const labRoutes = Labs.map((lab) => <Route key={lab.id} path={"/labReports/" + lab.id} element={<PDFViewer title={lab.title} pdf={lab.file} />} />);
     const literatureReviewRoutes = LiteratureReview.map((review) => <React.Fragment key={review.id}>
-        <Route path={"/researchPaperReview/Paper" + review.id} element={<PDFViewer pdf={review.paper} />} />
-        <Route path={"/researchPaperReview/Review" + review.id} element={<PDFViewer pdf={review.review} />} />
+        <Route path={"/researchPaperReview/Paper" + review.id} element={<PDFViewer title={review.title} pdf={review.paper} />} />
+        <Route path={"/researchPaperReview/Review" + review.id} element={<PDFViewer title={review.title} pdf={review.review} />} />
     </React.Fragment>)
 
     return (

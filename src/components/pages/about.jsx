@@ -70,8 +70,7 @@ class AboutPage extends Component {
     render() {
         return (
             <React.Fragment>
-                {/* <div className="content" > */}
-                <h1 className='aboutTitle'>Group Members</h1>
+                <div className='pageTitle'>Group Members</div>
                 <div className="aboutBody">
                     {Object.keys(this.state.profiles).map((key, index) => {
                         return (
@@ -81,9 +80,9 @@ class AboutPage extends Component {
                         );
                     })}
                 </div>
-                <div className='aboutFooterTitle' onClick={this.handleClick}>
+                {/* <div className='aboutFooterTitle' onClick={this.handleClick}>
                     Lab Reports
-                </div>
+                </div> */}
                 <div className="aboutFooterBody" onClick={this.handleClick}>
                     (Click to See Lab Reports)
                 </div>

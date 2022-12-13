@@ -11,7 +11,7 @@ const LabReports = (props) => {
     }
     return (
         <>
-            <div className='LRTitle'>
+            <div className='pageTitle'>
                 Lab Reports
             </div>
             <div className='LRBody'>

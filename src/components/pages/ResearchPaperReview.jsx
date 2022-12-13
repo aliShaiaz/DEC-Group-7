@@ -1,4 +1,6 @@
 import React from 'react';
+// import '../../CSS/ResearchPaperReview.css'
+
 const ResearchPaperReview = (props) => {
 
     const handleOnClick = (path) => {
@@ -7,9 +9,9 @@ const ResearchPaperReview = (props) => {
 
     return (
         <>
-            <h1>
+            <div className='pageTitle'>
                 Research Papers
-            </h1>
+            </div>
             <br /><br />
 
             {

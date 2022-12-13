@@ -12,7 +12,7 @@ import F_Gen from "../../assets/Devices/F_Gen.png";
 const LabEquipments = () => {
     return (
         <>
-            <h1>Equipment List</h1>
+            <div className='pageTitle'>Equipment List</div>
 
 
 

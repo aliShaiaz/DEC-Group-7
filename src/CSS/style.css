@@ -88,3 +88,15 @@
   height: 25vh;
   border-radius: 10px;
 }
+
+/* GLOBAL SETTINGS */
+
+.pageTitle {
+  background-color: black;
+  opacity: 0.15;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Marker Felt;
+  padding: 20px;
+  margin-bottom: 10px;
+}

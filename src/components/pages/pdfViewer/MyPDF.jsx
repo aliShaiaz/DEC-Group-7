@@ -97,6 +97,7 @@ export const MyPDF = (props) => {
                 </button>
             </form> */}
             {/* <h4>View PDF</h4> */}
+
             <div className='pdf-container'>
                 <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.6.347/build/pdf.worker.min.js">
                     <Viewer fileUrl={viewPdf} plugins={[defaultLayoutPluginInstance]} />

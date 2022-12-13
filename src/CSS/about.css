@@ -2,8 +2,8 @@
   /* background: green; */
   /* margin-top: 60px; */
 
-  animation: wait 1.5s, fadeIn 1.5s;
-  animation-delay: 0s, 1.5s;
+  /* animation: wait 1.5s, fadeIn 1.5s; */
+  /* animation-delay: 0s, 1.5s; */
   font-family: Marker Felt;
   font-size: 50px;
   font-weight: bolder;
@@ -16,14 +16,16 @@
 .aboutBody {
   position: relative;
   width: 100%;
-  animation: wait 3s, fadeIn 2s;
-  animation-delay: 0s, 3s;
+  /* animation: wait 3s, fadeIn 2s; */
+  /* animation-delay: 0s, 3s; */
   color: darkgray;
 
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+  width: 80vw;
+  margin: auto;
 }
 .aboutFooterBody {
   position: relative;
