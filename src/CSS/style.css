@@ -58,36 +58,6 @@
 
 /* EQP LIST! */
 
-.device {
-  /* background: blue; */
-  display: flex;
-  justify-content: left;
-  margin: 35px;
-}
-
-.deviceName {
-  font-weight: bold;
-  width: 90%;
-  margin: 10px 20px;
-  font-size: 35px;
-  height: 100%;
-
-  align-self: center;
-  color: #5e5e5e;
-}
-
-.deviceDescription {
-  /* background: red; */
-  text-align: justify;
-  display: block;
-  color: black;
-  margin: 20px;
-}
-
-.deviceImage {
-  height: 25vh;
-  border-radius: 10px;
-}
 
 /* GLOBAL SETTINGS */
 
