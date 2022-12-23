@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../CSS/labReports.css';
 
 
@@ -14,7 +14,7 @@ const LabReports = (props) => {
             <div className='pageTitle'>
                 Lab Reports
             </div>
-            <div className='LRBody'>
+            <div className='pageBody'>
                 {
                     props.Labs.map((value) =>
                         <>

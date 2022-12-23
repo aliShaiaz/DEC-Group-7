@@ -12,17 +12,18 @@ const ResearchPaperReview = (props) => {
             <div className='pageTitle'>
                 Research Papers
             </div>
-            <br /><br />
+            <div className="pageBody">
 
-            {
-                props.LiteratureReview.map((value) =>
-                    <React.Fragment key={value.id}>
-                        <h2>{value.title}</h2>
-                        <br />
-                        <button className='btn' onClick={() => handleOnClick('Paper' + value.id)}>  Research Paper</button>
-                        <button className='btn' onClick={() => handleOnClick('Review' + value.id)}>  Review of The Research Paper</button>
-                    </React.Fragment>)
-            }
+                {
+                    props.LiteratureReview.map((value) =>
+                        <React.Fragment key={value.id}>
+                            <h2>{value.title}</h2>
+                            <br />
+                            <button className='btn' onClick={() => handleOnClick('Paper' + value.id)}>  Research Paper</button>
+                            <button className='btn' onClick={() => handleOnClick('Review' + value.id)}>  Review of The Research Paper</button>
+                        </React.Fragment>)
+                }
+            </div>
 
 
 

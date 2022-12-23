@@ -1,17 +1,9 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import '../../CSS/landingPage.css';
 
 class LandingPage extends Component {
     handleClick = () => {
         this.props.redirect('about');
-    }
-
-    constructor(props) {
-        super(props);
-
-        // document.getElementById("navbar").navbar.classList.add("hide");
-        // document.getElementById("navbar").className = "hide";
     }
 
     render() {

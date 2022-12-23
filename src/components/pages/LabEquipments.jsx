@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 
 // Images
 import Devices from "../../assets/Devices";
 // ... //
 
-import '../../CSS/labEquipments.css';
+// import '../../CSS/labEquipments.css';
 
 
 
@@ -13,7 +13,7 @@ const LabEquipments = () => {
     return (
         <>
             <div className='pageTitle'>Equipment List</div>
-            <div className='device' id='oscilloscope'>
+            <div className='device'>
 
                 <table>
                     <tbody>

@@ -1,0 +1,72 @@
+@import "watermark.css";
+@import "NavBar.css";
+
+:root {
+  /* --primary-color: #04619f; */
+  /* --secondary-color: #000000; */
+  --primary-color: skyblue;
+  --secondary-color: #ffffff;
+  --font-color: white;
+  --background: linear-gradient(
+    45deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+
+  --nav-height: 12vh;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    /* background: black; */
+  }
+  to {
+    opacity: 1;
+    /* background: linear-gradient(45deg, #000, #555); */
+  }
+}
+@keyframes wait {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.background {
+  background: var(--background);
+  position: fixed;
+  width: 100%;
+  min-height: 100vh;
+  animation: fadeIn 6s;
+  z-index: -1;
+}
+
+.hide {
+  display: none;
+}
+
+.contentx {
+  position: absolute;
+  top: var(--nav-height);
+  color: white;
+  width: 100%;
+  text-align: center;
+  /* background-color: blueviolet; */
+}
+
+/* EQP LIST! */
+
+
+/* GLOBAL SETTINGS */
+
+.pageTitle {
+  background-color: black;
+  opacity: 0.15;
+  font-size: 100px;
+  font-weight: bold;
+  font-family: Marker Felt;
+  padding: 20px;
+  margin-bottom: 10px;
+}

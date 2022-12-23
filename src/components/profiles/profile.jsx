@@ -2,11 +2,9 @@ import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 // import '../CSS/block.css'
 import '../../CSS/profile.css'
-import icon_fb from '../../assets/icons/facebook.png';
 import icon_researchGate from '../../assets/icons/researchGate.png';
 import icon_linkedin from '../../assets/icons/linkedin.png';
 import icon_github from '../../assets/icons/github.png';
-import icon_web from '../../assets/icons/web.png';
 
 
 
@@ -37,7 +35,7 @@ class Profile extends Component {
                         <div className='links'>
                             {this.temp}
 
-                            <a target="_blank" href={this.props.info.linkedin}>
+                            <a target="_blank" rel="noopener noreferrer" href={this.props.info.linkedin}>
                                 <img src={icon_linkedin} alt="FB" className="icon" />
                             </a>
                             {/* <Link to={this.props.info.linkedin}>
@@ -49,10 +47,10 @@ class Profile extends Component {
                             {/* <a target="_blank" href={this.props.info.facebook}><img src={icon_fb} alt="FB" className="icon" />
                             </a> */}
 
-                            <a target="_blank" href={this.props.info.researchGate}><img src={icon_researchGate} alt="FB" className="icon" />
+                            <a target="_blank" rel="noopener noreferrer" href={this.props.info.researchGate}><img src={icon_researchGate} alt="FB" className="icon" />
                             </a>
 
-                            <a target="_blank" href={this.props.info.github}>
+                            <a target="_blank" rel="noopener noreferrer" href={this.props.info.github}>
                                 <img src={icon_github} alt="FB" className="icon" />
                             </a>
 

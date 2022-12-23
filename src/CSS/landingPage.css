@@ -1,7 +1,8 @@
 .content {
+  position: fixed;
   color: white;
   top: 0px;
-  height: 100vh;
+  height: 100%;
   width: 100%;
   margin: auto;
   text-align: center;
@@ -16,7 +17,7 @@
   animation: wait 1.5s, fadeIn 1.5s;
   animation-delay: 0s, 1.5s;
   font-family: Brush Script MT;
-  font-size: 200px;
+  font-size: 20vw;
   /* font-weight: bolder; */
   margin-bottom: 20px;
   color: lightgray;

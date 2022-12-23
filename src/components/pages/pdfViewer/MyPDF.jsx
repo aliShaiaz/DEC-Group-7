@@ -62,23 +62,23 @@ export const MyPDF = (props) => {
     }
 
     // form submit
-    const handlePdfFileSubmit = (e) => {
-        e.preventDefault();
-        if (pdfFile !== null) {
-            setViewPdf(pdfFile);
-        }
-        else {
-            setViewPdf(null);
-        }
-    }
+    // const handlePdfFileSubmit = (e) => {
+    //     e.preventDefault();
+    //     if (pdfFile !== null) {
+    //         setViewPdf(pdfFile);
+    //     }
+    //     else {
+    //         setViewPdf(null);
+    //     }
+    // }
 
-    const handleOnClick = () => {
-        const pdf = require(props.sentFile);
-        alert(pdf);
-    }
+    // const handleOnClick = () => {
+    //     const pdf = require(props.sentFile);
+    //     alert(pdf);
+    // }
 
     return (
-        <div className='container'>
+        <div >
 
             {/* <br></br> */}
 

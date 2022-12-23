@@ -71,7 +71,9 @@ class AboutPage extends Component {
         return (
             <React.Fragment>
                 <div className='pageTitle'>Group Members</div>
-                <div className="aboutBody">
+                <div className="pageBody" style={{
+                    display: "flex", flexWrap: "wrap", justifyContent: "center"
+                }}>
                     {Object.keys(this.state.profiles).map((key, index) => {
                         return (
                             <div key={index}>
@@ -87,7 +89,7 @@ class AboutPage extends Component {
                     (Click to See Lab Reports)
                 </div>
                 {/* </div> */}
-            </React.Fragment>
+            </React.Fragment >
         );
     }
 }
