@@ -25,6 +25,7 @@
   /* min-height: 100vh; */
   height: 100%;
   animation: fadeIn 6s;
+  opacity: 0.85;
   z-index: -1;
 }
 
