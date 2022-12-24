@@ -43,6 +43,13 @@ const Container = () => {
         document.getElementById("container").style.opacity = 0;
         document.getElementById("container").style.transition = "opacity 1s";
 
+        document.getElementById("hamburgerCheckbox").checked = false;
+        // document.getElementById('mobileNavBar').classList.toggle('maximize');
+        document.getElementById('mobileNavBar').classList.remove('maximize');
+
+
+        // alert(20);
+
         setTimeout(() => {
             redirect(url);
             document.getElementById("container").style.opacity = 1;
@@ -109,6 +116,12 @@ const Container = () => {
     ));
 
 
+    const handleToggleClass = () => {
+
+        // 👇️ toggle class on click
+        // event.currentTarget.classList.toggle('maximize');
+        document.getElementById('mobileNavBar').classList.toggle('maximize');
+    };
 
 
     return (
@@ -137,7 +150,7 @@ const Container = () => {
                         className="dropdown"
                     >
                         <button className="dropbtn" onClick={() => { navigate('/researchPaperReview') }}>Research Paper Review</button>
-                        <div class="dropdown-content">
+                        <div className="dropdown-content">
                             {literatureReviewList}
                             <div>test</div>
                         </div>
@@ -146,7 +159,7 @@ const Container = () => {
                         className="dropdown"
                     >
                         <button className="dropbtn" onClick={() => { navigate('/LabReports') }}>Lab Reports</button>
-                        <div class="dropdown-content">
+                        <div className="dropdown-content">
                             {labReportList}
                         </div>
                     </Nav.Item>
@@ -159,6 +172,22 @@ const Container = () => {
                 </span>
             </Nav>
 
+            <Nav className="mobileNavBar" id="mobileNavBar" >
+                <div className="mobileNavContent">
+                    <nav>
+                        <input type="checkbox" id="hamburgerCheckbox" />
+                        <label id="labelhamburgerCheckbox" htmlFor="hamburgerCheckbox" onClick={handleToggleClass} />
+                        <ul className="nav-links">
+                            <li><span onClick={() => { navigate('/about') }}>About</span></li>
+                            <li><span onClick={() => { navigate('/ResearchPaperReview') }}>Research Paper Review</span></li>
+                            <li><span onClick={() => { navigate('/LabReports') }}>Lab Reports</span></li>
+                            <li><span onClick={() => { navigate('LabEquipments') }}>Lab Equipments</span></li>
+                            <li><span onClick={() => window.location.replace('https://www.alishaiaz.me')}>Contact Developer</span></li>
+                        </ul>
+                    </nav>
+                </div>
+            </Nav >
+
 
             <div className="page">
 
@@ -166,7 +195,7 @@ const Container = () => {
                 <div id="container" className="container">
                     <div>
                         <Routes>
-                            {/* <Route path="/" element={<LandingPage redirect={navigate} />} /> */}
+
                             <Route path="/about" element={<AboutPage redirect={navigate} />} />
 
                             <Route path="/labReports" element={<LabReports redirect={navigate} Labs={Labs} />} />
@@ -192,6 +221,8 @@ const Container = () => {
                     </div>
                 </div>
             </div>
+
+
 
         </>
     );

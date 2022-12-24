@@ -53,3 +53,17 @@
   flex-direction: column;
 }
 
+@import url(mobileNavBar.css);
+
+.mobileNavBar {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .mobileNavBar {
+    display: unset;
+  }
+  .navBar {
+    display: none;
+  }
+}

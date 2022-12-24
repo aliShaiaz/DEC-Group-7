@@ -1,97 +1,42 @@
-import React, { Component } from 'react';
+import React from 'react';
 import '../../CSS/about.css';
-import Profile from '../profiles/profile';
-import p_33829 from '../profiles/profilePhotos/33829.jpg';
-import p_43652 from '../profiles/profilePhotos/43652.jpg';
-import p_44031 from '../profiles/profilePhotos/44031.jpg';
-import p_44112 from '../profiles/profilePhotos/44112.jpg';
-import p_41203 from '../profiles/profilePhotos/41203.jpg';
-// import p_44031 from '../profiles/profilePhotos/33829.jpg';
+import Profile from './profile';
+
+// Group Members Information //
+import GroupMembers from '../../assets/Group Members';
+// . . . //
 
 
 
 
-class AboutPage extends Component {
-    state = {
-        profiles: {
-            _33829: {
-                name: 'Ali, Shaiaz',
-                id: '17-33829-1',
-                dept: 'CSE',
-                linkedin: 'https://www.linkedin.com/in/alishaiaz/',
-                researchGate: 'https://www.researchgate.net/profile/Shaiaz-Ali',
-                github: 'https://github.com/aliShaiaz',
-                website: 'https://alishaiaz.me/',
-                profilePhoto: p_33829
-            }, _44031: {
-                name: 'Alvee, Junayed Alam',
-                id: '20-44031-2',
-                dept: 'EEE',
-                linkedin: '',
-                researchGate: 'https://www.researchgate.net/profile/Alvee-Hasan',
-                github: 'https://github.com/albee83',
-                website: '',
-                profilePhoto: p_44031
-            }, _44112: {
-                name: 'Das, Antu',
-                id: '20-44112-2',
-                dept: 'EEE',
-                linkedin: 'https://www.linkedin.com/in/antu-das-275790251/',
-                researchGate: 'https://www.researchgate.net/profile/Antu-Das-7',
-                github: 'https://github.com/AntuDas17',
-                website: '',
-                profilePhoto: p_44112
-            }, _43652: {
-                name: 'Safat, Sajjam Hossain',
-                id: '20-43652-2',
-                dept: 'EEE',
-                linkedin: 'https://www.linkedin.com/in/sajjam-hossain-safat-01a378253',
-                researchGate: 'https://www.researchgate.net/profile/Sajjam-Safat',
-                github: 'https://github.com/99safat',
-                website: '',
-                profilePhoto: p_43652
-            }, _41203: {
-                name: 'Hossain,  Md. Imtiaz',
-                id: '19-41203-2',
-                dept: 'EEE',
-                linkedin: 'https://www.linkedin.com/in/imtiaz-hossain-35456b253/',
-                researchGate: 'https://www.researchgate.net/profile/Imtiaz-Hossain-8',
-                github: 'https://github.com/19-41203-2',
-                website: '',
-                profilePhoto: p_41203
-            }
-        }
-    }
 
-    handleClick = () => {
+const AboutPage = (props) => {
+
+    const handleClick = () => {
         this.props.redirect('/labReports');
     }
+    return (
+        <React.Fragment>
+            <div className='pageTitle'>Group Members</div>
+            <div className="pageBody" style={{
+                display: "flex", flexWrap: "wrap", justifyContent: "center"
+            }}>
 
-    render() {
-        return (
-            <React.Fragment>
-                <div className='pageTitle'>Group Members</div>
-                <div className="pageBody" style={{
-                    display: "flex", flexWrap: "wrap", justifyContent: "center"
-                }}>
-                    {Object.keys(this.state.profiles).map((key, index) => {
-                        return (
-                            <div key={index}>
-                                <Profile info={this.state.profiles[key]} />
-                            </div>
-                        );
-                    })}
-                </div>
-                {/* <div className='aboutFooterTitle' onClick={this.handleClick}>
-                    Lab Reports
-                </div> */}
-                <div className="aboutFooterBody" onClick={this.handleClick}>
-                    (Click to See Lab Reports)
-                </div>
-                {/* </div> */}
-            </React.Fragment >
-        );
-    }
+                {
+                    GroupMembers.map((member) =>
+                        <div key={member.id}>
+                            <Profile info={member} />
+                        </div>
+                    )
+                }
+
+            </div>
+
+            <div className="aboutFooterBody" onClick={handleClick}>
+                (Click to See Lab Reports)
+            </div>
+        </React.Fragment >
+    );
 }
 
 export default AboutPage;

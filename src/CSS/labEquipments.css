@@ -11,10 +11,6 @@
   margin: 1vw;
 }
 
-table * {
-  border: 10px solid green;
-}
-
 .deviceName {
   font-weight: bold;
   width: 90%;
